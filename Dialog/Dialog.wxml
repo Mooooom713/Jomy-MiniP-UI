@@ -1,0 +1,15 @@
+<view hidden='{{!isShow}}' class='dialog'>
+    <view catchtap='hideDialog' class='dialog-mask'></view>
+    <view class='dialog-layer'>
+        <view class='dialog-header'>
+            <text>{{title}}</text>
+        </view>
+        <view class='dialog-body'>
+            <view>{{content}}</view>
+        </view>
+        <view class='dialog-footer'>
+            <text catchtap='_canceldialog' class='btn btn-default'>{{cancelText}}</text>
+            <text catchtap='_confirmdialog' class='btn btn-primary'>{{confirmText}}</text>
+        </view>
+    </view>
+</view>
